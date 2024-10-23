@@ -5,6 +5,7 @@ import ForwardDiff: Dual
 #       for exchange and correlation ... if it does not help, remove it again
 abstract type Functional{Family,Kind} end
 
+# NOTE: why no "hybrid"?
 """Return the family of a functional. Results are `:lda`, `:gga`, `:mgga` and
 `:mggal` (Meta-GGA requiring Laplacian of ρ)"""
 family(::Functional{F}) where {F} = F

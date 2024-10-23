@@ -53,7 +53,7 @@ end
 
 """
 Revised PBE exchange.
-Zhang, Yang 1998 (DOI 10.1103/physrevlett.80.890)
+Zhang, Yang 1998 (DOI: 10.1103/physrevlett.80.890)
 """
 function DftFunctional(::Val{:gga_x_pbe_r})
     PbeExchange(ComponentArray(κ=1.245, μ=pbe_μ_from_β(0.06672455060314922)), :gga_x_pbe_r)
@@ -61,7 +61,7 @@ end
 
 """
 XPBE exchange.
-Xu, Goddard 2004 (DOI 10.1063/1.1771632)
+Xu, Goddard 2004 (DOI: 10.1063/1.1771632)
 """
 function DftFunctional(::Val{:gga_x_xpbe})
     PbeExchange(ComponentArray(κ=0.91954, μ=0.23214), :gga_x_xpbe)  # Table 1
@@ -69,7 +69,7 @@ end
 
 """
 PBESol exchange.
-Perdew, Ruzsinszky, Csonka and others 2008 (DOI 10.1103/physrevlett.100.136406)
+Perdew, Ruzsinszky, Csonka and others 2008 (DOI: 10.1103/physrevlett.100.136406)
 """
 function DftFunctional(::Val{:gga_x_pbe_sol})
     # μ given below equation (2)
@@ -78,7 +78,7 @@ end
 
 """
 APBE exchange.
-Constantin, Fabiano, Laricchia 2011 (DOI 10.1103/physrevlett.106.186406)
+Constantin, Fabiano, Laricchia 2011 (DOI: 10.1103/physrevlett.106.186406)
 """
 function DftFunctional(::Val{:gga_x_apbe})
     # p. 1, right column, bottom
@@ -87,7 +87,7 @@ end
 
 """
 PBEmol exchange.
-del Campo, Gazqez, Trickey and others 2012 (DOI 10.1063/1.3691197)
+del Campo, Gazqez, Trickey and others 2012 (DOI: 10.1063/1.3691197)
 """
 function DftFunctional(::Val{:gga_x_pbe_mol})
     # p. 4, left column, bottom
@@ -96,7 +96,7 @@ end
 
 """
 PBEfe exchange.
-Sarmiento-Perez, Silvana, Marques 2015 (DOI 10.1021/acs.jctc.5b00529)
+Sarmiento-Perez, Silvana, Marques 2015 (DOI: 10.1021/acs.jctc.5b00529)
 """
 function DftFunctional(::Val{:gga_x_pbefe})
     PbeExchange(ComponentArray(κ=0.437, μ=0.346), :gga_x_pbefe)  # Table 1
